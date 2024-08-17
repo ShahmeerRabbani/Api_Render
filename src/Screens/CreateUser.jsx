@@ -1,8 +1,11 @@
 import { Button, Paper, TextField, Typography } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateUser = () => {
+
+  const navigate = useNavigate()
   const [createData, setCreateData] = useState({
     name: "",
     email: "",
@@ -14,8 +17,11 @@ const CreateUser = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3030/users", createData)
-      .then((res) => alert("user create successfully"))
+      .post("http://localhost:3000/users", createData)
+      .then((res) => {
+        alert("user create successfully")
+        navigate('/')
+      })
       .catch((err) => console.log(err));
   };
   return (

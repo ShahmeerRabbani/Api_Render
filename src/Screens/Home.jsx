@@ -9,12 +9,11 @@ const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:3030/users")
+      .get("http://localhost:3000/users")
       .then((res) => setUserData(res.data))
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(userData);
 
   return (
     <Box>
