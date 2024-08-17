@@ -17,14 +17,6 @@
       "website": "elvis.io"
     },
     {
-      "id": 3,
-      "name": "Nicholas Runolfsdottir V",
-      "username": "Maxime_Nienow",
-      "email": "Sherwood@rosamond.me",
-      "phone": "586.493.6943 x140",
-      "website": "jacynthe.com"
-    },
-    {
       "id": 4,
       "name": "Glenna Reichert",
       "username": "Delphine",
@@ -39,13 +31,6 @@
       "email": "Rey.Padberg@karina.biz",
       "phone": "024-648-3804",
       "website": "ambrose.net"
-    },
-    {
-      "name": "Muhammad Faraz",
-      "username": "mFaraz2001",
-      "email": "faraz786@gmail.com",
-      "phone": "0309-1231718",
-      "id": 6
     },
     {
       "name": "John Smith",
@@ -97,17 +82,10 @@
       "id": 19
     },
     {
-      "name": "haris",
-      "email": "haris@gmail.com",
-      "username": "saleem",
-      "phone": "123-2332-2443",
-      "id": 20
-    },
-    {
-      "name": "Github_User_Finder",
-      "email": "ahsajshjah@gmail.com",
-      "username": "hasgha",
-      "phone": "08765432345",
+      "name": "saad",
+      "email": "saad@gmail.com",
+      "username": "saad-2121",
+      "phone": "1234567890",
       "id": 21
     }
   ]
