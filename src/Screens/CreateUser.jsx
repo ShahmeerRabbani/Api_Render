@@ -20,7 +20,7 @@ const CreateUser = () => {
       .post("http://localhost:3000/users", createData)
       .then((res) => {
         alert("user create successfully")
-        navigate('/')
+        navigate('/home')
       })
       .catch((err) => console.log(err));
   };

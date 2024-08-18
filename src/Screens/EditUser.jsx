@@ -27,7 +27,7 @@ const EditUserInfo = () => {
         axios.put("http://localhost:3000/users/" + id, editUser)
         .then((response) => {
             alert('user Updated Successfully..')
-            navigate('/')
+            navigate('/home')
         })
         .catch((error) => console.log(error))
     }

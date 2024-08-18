@@ -11,7 +11,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { ContentCopy} from "@mui/icons-material";
+import { ContentCopy } from "@mui/icons-material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -34,18 +34,17 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 export default function Tables({ data }) {
-
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
-    axios.delete("http://localhost:3000/users/" + id)
-    .then((res) => {
-      alert('User Delete Permanently')
-    })
-    .catch((err) => console.log(err))
-  }
+    axios
+      .delete("http://localhost:3000/users/" + id)
+      .then((res) => {
+        alert("User Delete Permanently");
+      })
+      .catch((err) => console.log(err));
+  };
 
-  
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -70,8 +69,14 @@ export default function Tables({ data }) {
               <StyledTableCell align="left">{e.username}</StyledTableCell>
               <StyledTableCell align="left">{e.phone}</StyledTableCell>
               <StyledTableCell align="left">
-                <DeleteIcon onClick={() => handleDelete(e.id)} sx={{ color: "black", cursor: 'pointer', marginRight: 2}} />
-                <EditIcon onClick={() => navigate(`/editUser/${e.id}`)} sx={{ color: "blue", cursor: 'pointer', marginRight: 2}} />
+                <DeleteIcon
+                  onClick={() => handleDelete(e.id)}
+                  sx={{ color: "black", cursor: "pointer", marginRight: 2 }}
+                />
+                <EditIcon
+                  onClick={() => navigate(`/editUser/${e.id}`)}
+                  sx={{ color: "blue", cursor: "pointer", marginRight: 2 }}
+                />
               </StyledTableCell>
             </StyledTableRow>
           ))}
