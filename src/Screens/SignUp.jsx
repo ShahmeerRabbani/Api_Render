@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
 import React, { useState } from 'react'
 import { json, Link, useNavigate } from 'react-router-dom'
 import { auth } from './FirebaseConfig'
@@ -19,6 +19,10 @@ const SignUp = () => {
     
     createUserWithEmailAndPassword(auth, registration.email, registration.password)
     .then((res) =>{
+      sendEmailVerification(auth.currentUser)
+      .then((res) => {
+        console.log('email is verified')
+      })
         alert('Sign Up Successfully..')
         navigate('/')
     })

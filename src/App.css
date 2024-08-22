@@ -77,3 +77,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.social-login{
+  display: flex;
+  gap: 20px;
+}
+
+.social-login>button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
