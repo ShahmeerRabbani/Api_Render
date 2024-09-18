@@ -6,6 +6,7 @@ import './App.css'
 import EditUserInfo from './Screens/EditUser'
 import SignUp from './Screens/SignUp'
 import Login from './Screens/Login'
+import DataBase from './Screens/DataBase'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
        <Route path="/signUp" element={<SignUp />} />       
        <Route path="/home" element={<Home />} />       
        <Route path="/createUser" element={<CreateUser />} /> 
+       <Route path="/database" element={<DataBase />} /> 
        <Route path="/editUser/:id" element={<EditUserInfo />} /> 
     </Routes>
     </div>

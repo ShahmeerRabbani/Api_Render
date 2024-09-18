@@ -40,13 +40,6 @@
       "id": 7
     },
     {
-      "name": "Tony Stark",
-      "username": "tony_stark",
-      "email": "tony12@gmail.com",
-      "phone": "91-457-123-5400",
-      "id": 8
-    },
-    {
       "name": "Scarlet Witch",
       "username": "Scarlet ",
       "email": "scarlet@gmail.com",
@@ -94,6 +87,13 @@
       "username": "shahmeer-324",
       "phone": "0987654321",
       "id": 22
+    },
+    {
+      "name": "Salman",
+      "email": "salman@gmail.com",
+      "username": "Khan",
+      "phone": "031120910310",
+      "id": 23
     }
   ]
 }
